@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Login_runner_PO(failed)">
+    <classes>
+      <class name="com.cucumber.framework.runner.Infotech_HR.failedscenario">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.cucumber.framework.runner.Infotech_HR.failedscenario -->
+      <class name="com.cucumber.framework.runner.Infotech_HR.Login_runner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="0 1"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.cucumber.framework.runner.Infotech_HR.Login_runner -->
+    </classes>
+  </test> <!-- Login_runner_PO(failed) -->
+</suite> <!-- Failed suite [Suite] -->

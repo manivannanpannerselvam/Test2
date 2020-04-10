@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite111">
+
+	<test name="Question_1">
+		<classes>
+			<class name="com.cucumber.framework.runner.IMDb.Question_1"/>
+			
+		</classes> 
+	</test>
+	  <!--  
+	  <test name="Question_2">
+		<classes>
+			<class name="com.cucumber.framework.runner.IMDb.Question_2"/>
+			
+		</classes> 
+	</test>
+	-->
+	  
+	  <test name="Login_failed">
+		<classes>
+			<class name="com.cucumber.framework.runner.Infotech_HR.failedscenario"/>
+			
+		</classes>
+	</test>
+ 
+	  
+  
+	  
+	  
+	  
+	  <!--  
+	<test name="UserAccess_Employee_Edit_PO">
+		<classes>
+			<class name="com.cucumber.framework.runner.UserAccess.UserAccess_Employee"/>
+			
+		</classes>
+	</test>
+	
+	 
+	<test name="UserAccess_Employees_Edit_PO">
+		<classes>
+			<class name="com.cucumber.framework.runner.UserAccess.UserAccess_Employees"/>
+			
+		</classes>
+	</test>
+	
+	 
+	<test name="UserAccess_Negative_Edit_PO">
+		<classes>
+			<class name="com.cucumber.framework.runner.UserAccess.UserAccess_Negative"/>
+			
+		</classes>
+	</test>
+	
+	<test name="UserAccess_Negative1_Edit_PO">
+		<classes>
+			<class name="com.cucumber.framework.runner.UserAccess.UserAccess_Negative1"/>
+			
+		</classes>
+	</test>
+	
+	
+	<test name="UserAccess_Negative2_Edit_PO">
+		<classes>
+			<class name="com.cucumber.framework.runner.UserAccess.UserAccess_Negative2"/>
+			
+		</classes>
+	</test>
+	
+	<test name="UserAccess_Negative3_Edit_PO">
+		<classes>
+			<class name="com.cucumber.framework.runner.UserAccess.UserAccess_Negative3"/>
+			
+		</classes>
+	</test>
+	
+	
+	 <test name="Login_failed">
+		<classes>
+			<class name="com.cucumber.framework.runner.Infotech_HR.failedscenario"/>
+			
+		</classes>
+	</test>
+ 
+	-->
+	
+	
+</suite> 

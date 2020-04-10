@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Employee Basic Details]">
+  <test name="Basic_Employee_Details(failed)">
+    <classes>
+      <class name="com.cucumber.framework.runner.Infotech_HR.failedscenario">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.cucumber.framework.runner.Infotech_HR.failedscenario -->
+      <class name="com.cucumber.framework.runner.Employee_Basic_Details.Employee_Sanity">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="1 5 9 13 17 18"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.cucumber.framework.runner.Employee_Basic_Details.Employee_Sanity -->
+    </classes>
+  </test> <!-- Basic_Employee_Details(failed) -->
+  <test name="Login_failed(failed)">
+    <classes>
+      <class name="com.cucumber.framework.runner.Infotech_HR.failedscenario">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="0 1 2 5"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.cucumber.framework.runner.Infotech_HR.failedscenario -->
+      <class name="com.cucumber.framework.runner.Employee_Basic_Details.Employee_Sanity">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.cucumber.framework.runner.Employee_Basic_Details.Employee_Sanity -->
+    </classes>
+  </test> <!-- Login_failed(failed) -->
+</suite> <!-- Failed suite [Employee Basic Details] -->

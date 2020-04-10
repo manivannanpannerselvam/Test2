@@ -1,0 +1,90 @@
+@IMDB_search_Functionality
+Feature: verify the IMDB_Search_Functionality
+
+  Scenario: Verify the search box present auto-suggestions when the query is being typed [90m# featurefile/IMDB/Search_functionality.feature:5[0m
+    [32mGiven [0m[32mopen the valid url in IMDb application[0m                                         [90m# Search_Test_step.open_the_valid_url_in_IMDb_application()[0m
+    [32mThen [0m[32mEnter the valid search name in search field "[0m[32m[1mPrime[0m[32m"[0m                             [90m# Search_Test_step.enter_the_valid_search_name_in_search_field(String)[0m
+    [32mThen [0m[32mVerify the All prime name flim list in drop down list "[0m[32m[1mPrime[0m[32m"[0m                   [90m# Search_Test_step.verify_the_All_prime_name_flim_list_in_drop_down_list(String)[0m
+
+  Scenario: Verified Without entering anything click on Search button [90m# featurefile/IMDB/Search_functionality.feature:11[0m
+    [32mGiven [0m[32mopen the valid url in IMDb application[0m                      [90m# Search_Test_step.open_the_valid_url_in_IMDb_application()[0m
+    [32mThen [0m[32mclick the search icon in search field[0m                        [90m# Search_Test_step.click_the_search_icon_in_search_field()[0m
+    [32mThen [0m[32mVerify proper message should be displayed[0m                    [90m# Search_Test_step.verify_proper_message_should_be_displayed()[0m
+
+  Scenario: Verified edit and Delete option in search field                       [90m# featurefile/IMDB/Search_functionality.feature:16[0m
+    [32mGiven [0m[32mopen the valid url in IMDb application[0m                                  [90m# Search_Test_step.open_the_valid_url_in_IMDb_application()[0m
+    [32mThen [0m[32mEnter the valid search name in search field "[0m[32m[1mPrime[0m[32m"[0m                      [90m# Search_Test_step.enter_the_valid_search_name_in_search_field(String)[0m
+    [32mThen [0m[32muser should be edit the search field[0m                                     [90m# Search_Test_step.user_should_be_edit_the_search_field()[0m
+    [32mThen [0m[32mEnter the valid search name in search field "[0m[32m[1mPrime name[0m[32m"[0m                 [90m# Search_Test_step.enter_the_valid_search_name_in_search_field(String)[0m
+    [32mThen [0m[32mVerify New search data should be displayed in search field  "[0m[32m[1mPrime name[0m[32m"[0m [90m# Search_Test_step.verify_New_search_data_should_be_displayed_in_search_field(String)[0m
+
+  Scenario Outline: Verified the % sign in search keyword should not redirect to 404 ERROR [90m# featurefile/IMDB/Search_functionality.feature:24[0m
+    [36mGiven [0m[36mopen the valid url in IMDb application[0m
+    [36mThen [0m[36mEnter the Html query in search field "<SearchNames>"[0m
+    [36mThen [0m[36mclick the search icon in search field[0m
+    [36mThen [0m[36mVerify no result found alert message should be display "No results found"[0m
+
+    Examples: 
+
+  @IMDB_search_Functionality
+  Scenario Outline: Verified the % sign in search keyword should not redirect to 404 ERROR [90m# featurefile/IMDB/Search_functionality.feature:32[0m
+    [32mGiven [0m[32mopen the valid url in IMDb application[0m                                           [90m# Search_Test_step.open_the_valid_url_in_IMDb_application()[0m
+    [32mThen [0m[32mEnter the Html query in search field "[0m[32m[1m<script>alert(1)</script>[0m[32m"[0m                  [90m# Search_Test_step.enter_the_Html_query_in_search_field(String)[0m
+    [32mThen [0m[32mclick the search icon in search field[0m                                             [90m# Search_Test_step.click_the_search_icon_in_search_field()[0m
+    [32mThen [0m[32mVerify no result found alert message should be display "[0m[32m[1mNo results found[0m[32m"[0m         [90m# Search_Test_step.verify_no_result_found_alert_message_should_be_display(String)[0m
+
+  Scenario Outline: Verify the  characters ,number and special character allowed to be entered into the search box. [90m# featurefile/IMDB/Search_functionality.feature:35[0m
+    [36mGiven [0m[36mopen the valid url in IMDb application[0m
+    [36mThen [0m[36mEnter the Data in search text field "<SearchNames>"[0m
+    [36mThen [0m[36mVerify the text and number should be displayed in search textbox"<SearchNames>"[0m
+
+    Examples: 
+
+  @IMDB_search_Functionality
+  Scenario Outline: Verify the  characters ,number and special character allowed to be entered into the search box. [90m# featurefile/IMDB/Search_functionality.feature:42[0m
+    [32mGiven [0m[32mopen the valid url in IMDb application[0m                                                                    [90m# Search_Test_step.open_the_valid_url_in_IMDb_application()[0m
+    [32mThen [0m[32mEnter the Data in search text field "[0m[32m[1mNew Hollywood flim[0m[32m"[0m                                                   [90m# Search_Test_step.enter_the_Data_in_search_text_field(String)[0m
+    [32mThen [0m[32mVerify the text and number should be displayed in search textbox"[0m[32m[1mNew Hollywood flim[0m[32m"[0m                       [90m# Search_Test_step.verify_the_text_and_number_should_be_displayed_in_search_textbox(String)[0m
+
+  @IMDB_search_Functionality
+  Scenario Outline: Verify the  characters ,number and special character allowed to be entered into the search box. [90m# featurefile/IMDB/Search_functionality.feature:43[0m
+    [32mGiven [0m[32mopen the valid url in IMDb application[0m                                                                    [90m# Search_Test_step.open_the_valid_url_in_IMDb_application()[0m
+    [32mThen [0m[32mEnter the Data in search text field "[0m[32m[1m012345678901[0m[32m"[0m                                                         [90m# Search_Test_step.enter_the_Data_in_search_text_field(String)[0m
+    [32mThen [0m[32mVerify the text and number should be displayed in search textbox"[0m[32m[1m012345678901[0m[32m"[0m                             [90m# Search_Test_step.verify_the_text_and_number_should_be_displayed_in_search_textbox(String)[0m
+
+  @IMDB_search_Functionality
+  Scenario Outline: Verify the  characters ,number and special character allowed to be entered into the search box. [90m# featurefile/IMDB/Search_functionality.feature:44[0m
+    [32mGiven [0m[32mopen the valid url in IMDb application[0m                                                                    [90m# Search_Test_step.open_the_valid_url_in_IMDb_application()[0m
+    [32mThen [0m[32mEnter the Data in search text field "[0m[32m[1m!@%^&&*(**[0m[32m"[0m                                                           [90m# Search_Test_step.enter_the_Data_in_search_text_field(String)[0m
+    [32mThen [0m[32mVerify the text and number should be displayed in search textbox"[0m[32m[1m!@%^&&*(**[0m[32m"[0m                               [90m# Search_Test_step.verify_the_text_and_number_should_be_displayed_in_search_textbox(String)[0m
+
+  @IMDB_search_Functionality
+  Scenario Outline: Verify the  characters ,number and special character allowed to be entered into the search box. [90m# featurefile/IMDB/Search_functionality.feature:45[0m
+    [32mGiven [0m[32mopen the valid url in IMDb application[0m                                                                    [90m# Search_Test_step.open_the_valid_url_in_IMDb_application()[0m
+    [32mThen [0m[32mEnter the Data in search text field "[0m[32m[1mABCSDSDSD2342343242[0m[32m"[0m                                                  [90m# Search_Test_step.enter_the_Data_in_search_text_field(String)[0m
+    [32mThen [0m[32mVerify the text and number should be displayed in search textbox"[0m[32m[1mABCSDSDSD2342343242[0m[32m"[0m                      [90m# Search_Test_step.verify_the_text_and_number_should_be_displayed_in_search_textbox(String)[0m
+@IMDB_Top_Rated_show
+Feature: verify the Top Rated show_Functionality
+
+  Scenario: Verify the Top Rated show icon                               [90m# featurefile/IMDB/Top_Rated_shows.feature:5[0m
+    [32mGiven [0m[32mopen the valid url in IMDb application[0m                         [90m# Search_Test_step.open_the_valid_url_in_IMDb_application()[0m
+    [32mThen [0m[32mclick the Menu icon in IMDb screen[0m                              [90m# Top_Rated_movie_step.click_the_Menu_icon_in_IMDb_screen()[0m
+    [32mThen [0m[32mclick the Top Rated Shows icon[0m                                  [90m# Top_Rated_movie_step.click_the_Top_Rated_Shows_icon()[0m
+    [32mThen [0m[32mVerify Top Rated shows screen is displayed "[0m[32m[1mTop Rated TV Shows[0m[32m"[0m [90m# Top_Rated_movie_step.verify_Top_Rated_shows_screen_is_displayed(String)[0m
+
+  Scenario: Verify Search for ‘Game of thrones’ and select ‘Game of Thrones [90m# featurefile/IMDB/Top_Rated_shows.feature:11[0m
+    [32mGiven [0m[32mopen the valid url in IMDb application[0m                            [90m# Search_Test_step.open_the_valid_url_in_IMDb_application()[0m
+    [32mThen [0m[32mEnter the valid search name in search field "[0m[32m[1mGame of thrones[0m[32m"[0m      [90m# Search_Test_step.enter_the_valid_search_name_in_search_field(String)[0m
+    [32mThen [0m[32mclick the Game of Thrones The Last Watch link[0m                      [90m# Top_Rated_movie_step.click_the_Game_of_Thrones_The_Last_Watch_link()[0m
+
+  Scenario: Verify Title of the selected episode                                           [90m# featurefile/IMDB/Top_Rated_shows.feature:16[0m
+    [32mGiven [0m[32mopen the valid url in IMDb application[0m                                           [90m# Search_Test_step.open_the_valid_url_in_IMDb_application()[0m
+    [32mThen [0m[32mEnter the valid search name in search field "[0m[32m[1mGame of thrones[0m[32m"[0m                     [90m# Search_Test_step.enter_the_valid_search_name_in_search_field(String)[0m
+    [32mThen [0m[32mclick the Game of Thrones The Last Watch link[0m                                     [90m# Top_Rated_movie_step.click_the_Game_of_Thrones_The_Last_Watch_link()[0m
+    [32mThen [0m[32mVerify the Title of the selected episode "[0m[32m[1mGame of Thrones: The Last Watch (2019)[0m[32m"[0m [90m# Top_Rated_movie_step.verify_the_Title_of_the_selected_episode(String)[0m
+
+  Scenario: Verify Number of review in Game of Thrones                 [90m# featurefile/IMDB/Top_Rated_shows.feature:22[0m
+    [32mGiven [0m[32mopen the valid url in IMDb application[0m                       [90m# Search_Test_step.open_the_valid_url_in_IMDb_application()[0m
+    [32mThen [0m[32mEnter the valid search name in search field "[0m[32m[1mGame of thrones[0m[32m"[0m [90m# Search_Test_step.enter_the_valid_search_name_in_search_field(String)[0m
+    [32mThen [0m[32mclick the Game of Thrones The Last Watch link[0m                 [90m# Top_Rated_movie_step.click_the_Game_of_Thrones_The_Last_Watch_link()[0m
+    [32mThen [0m[32mVerify the number of review in Game of Thrones[0m                [90m# Top_Rated_movie_step.verify_the_number_of_review_in_Game_of_Thrones()[0m

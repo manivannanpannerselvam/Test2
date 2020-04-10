@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite111" duration-ms="405853" started-at="2020-04-10T07:54:22Z" finished-at="2020-04-10T08:01:08Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.cucumber.framework.runner.IMDb.Question_1@74294adb]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.cucumber.framework.runner.Infotech_HR.failedscenario@10b48321]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Question_1" duration-ms="405313" started-at="2020-04-10T07:54:22Z" finished-at="2020-04-10T08:01:08Z">
+      <class name="com.cucumber.framework.runner.IMDb.Question_1">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.cucumber.framework.runner.IMDb.Question_1@74294adb]" name="setUpClass" is-config="true" duration-ms="479" started-at="2020-04-10T07:54:22Z" finished-at="2020-04-10T07:54:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.cucumber.framework.runner.IMDb.Question_1@74294adb]" name="feature" duration-ms="260517" started-at="2020-04-10T07:54:23Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-04-10T07:58:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[verify the IMDB_Search_Functionality]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.cucumber.framework.runner.IMDb.Question_1@74294adb]" name="feature" duration-ms="143872" started-at="2020-04-10T07:58:44Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-04-10T08:01:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[verify the Top Rated show_Functionality]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.cucumber.framework.runner.IMDb.Question_1@74294adb]" name="tearDownClass" is-config="true" duration-ms="194" started-at="2020-04-10T08:01:08Z" finished-at="2020-04-10T08:01:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.cucumber.framework.runner.IMDb.Question_1 -->
+    </test> <!-- Question_1 -->
+    <test name="Login_failed" duration-ms="113" started-at="2020-04-10T08:01:08Z" finished-at="2020-04-10T08:01:08Z">
+      <class name="com.cucumber.framework.runner.Infotech_HR.failedscenario">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.cucumber.framework.runner.Infotech_HR.failedscenario@10b48321]" name="setUpClass" is-config="true" duration-ms="34" started-at="2020-04-10T08:01:08Z" finished-at="2020-04-10T08:01:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.cucumber.framework.runner.Infotech_HR.failedscenario@10b48321]" name="tearDownClass" is-config="true" duration-ms="37" started-at="2020-04-10T08:01:08Z" finished-at="2020-04-10T08:01:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.cucumber.framework.runner.Infotech_HR.failedscenario -->
+    </test> <!-- Login_failed -->
+  </suite> <!-- Suite111 -->
+</testng-results>

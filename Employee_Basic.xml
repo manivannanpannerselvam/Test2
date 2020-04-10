@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite111">
+  
+<!--  
+  
+	<test name="LoginRunner1">
+		<classes>
+			<class name="com.cucumber.framework.runner.Infotech_HR.Negative_Scenario_Employee_Runner"/>
+			
+		</classes>
+	</test>
+
+
+
+  <test name="Login">
+		<classes>
+			<class name="com.cucumber.framework.runner.Infotech_HR.Login_runner"/>
+			
+		</classes>
+	</test>
+    
+   
+      
+	<test name="Forgot_and_All_login_links">
+		<classes>
+			<class name="com.cucumber.framework.runner.Infotech_HR.forgot_runner"/>
+			
+		</classes>
+	</test>
+
+
+ 
+	<test name="LeaveSoftware4">
+		<classes>
+			<class name="com.cucumber.framework.runner.Infotech_HR.Leave_Software_runner"/>
+			
+		</classes>
+	</test>
+	
+-->
+
+	
+	<test name="UserAccess">
+		<classes>
+			<class name="com.cucumber.framework.runner.Infotech_HR.useraccess_runner"/>
+			
+		</classes>
+	</test>
+
+	<!--  
+	
+	<test name="Edit_User_Access">
+		<classes>
+			<class name="com.cucumber.framework.runner.Infotech_HR.Edit_User_Access"/>
+			
+		</classes>
+	</test>
+	
+ -->
+<!-- 
+	<test name="TestProductsCountBasedOnColor">
+		<classes>
+			<class name="com.cucumber.framework.runner.productCategory.TestProductsCountBasedOnColorRunner"/>
+		</classes>
+	</test>
+
+		
+	
+	<test name="RegistrationRunner">
+		<classes>
+			<class name="com.cucumber.framework.runner.registration.RegistrationRunner"/>
+		</classes>
+	</test>
+	
+	-->
+</suite> 
