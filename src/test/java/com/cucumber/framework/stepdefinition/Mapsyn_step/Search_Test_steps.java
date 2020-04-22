@@ -3,14 +3,22 @@ package com.cucumber.framework.stepdefinition.Mapsyn_step;
 import org.testng.Assert;
 
 import com.cucumber.framework.Mapsyn_page.Search_test_pages;
+import com.cucumber.framework.configreader.ObjectRepo;
 import com.cucumber.framework.helper.TestBase.TestBase;
 
+import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 
 public class Search_Test_steps {
 	
 	
 	Search_test_pages search;
+	
+	@Given("^open the valid Map url in Mapsynq APP$")
+	public void open_the_valid_Map_url_in_Mapsynq_APP() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+		TestBase.driver.get(ObjectRepo.reader.getWebsite());
+	}
 	
 	@Then("^Enter the valid Incidents search name in search field \"([^\"]*)\"$")
 	public void enter_the_valid_Incidents_search_name_in_search_field(String arg1) throws Throwable {

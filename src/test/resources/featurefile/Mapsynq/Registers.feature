@@ -16,6 +16,6 @@ Feature: verify the create Account screen
     Then Verify the Account should be created
 
     Examples: 
-      | FirstName | LastName | DateofBirth | Email_id        | Password  | Confirmpassword |
-      | Test      | Test     | 12-10-1986  | Test@gmail.com  | Ttest@238 | Ttest@238       |
-      | Tests     | Tests    | 12-10-1986  | Tesst@gmail.com | Ttest@238 | Ttest@238       |
+      | FirstName | LastName | DateofBirth | Email_id       | Password  | Confirmpassword |
+      | Test      | Test     | 12-10-1986  | Test@gmail.com | Ttest@238 | Ttest@238       |
+     # | Tests     | Tests    | 12-10-1986  | Tesst@gmail.com | Ttest@238 | Ttest@238       |

@@ -51,6 +51,10 @@ public class PropertyFileReader implements ConfigReader{
 	public BrowserType getBrowser() {
 		return BrowserType.valueOf(prop.getProperty("Browser"));
 	}
+	
+	public BrowserType getBrowsers() {
+		return BrowserType.valueOf(prop.getProperty("Browsers"));
+	}
 
 	
 }

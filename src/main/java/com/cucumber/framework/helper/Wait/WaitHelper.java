@@ -15,10 +15,6 @@ import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-
-
-
-
 public class WaitHelper {
 	
 	private WebDriver driver;
@@ -28,9 +24,6 @@ public class WaitHelper {
 		this.driver = driver;
 	
 	}
-	
-	
-
 	public void setImplicitWait(long timeout, TimeUnit unit) {
 	
 		driver.manage().timeouts().implicitlyWait(timeout, unit == null ? TimeUnit.SECONDS : unit);
@@ -49,8 +42,6 @@ public class WaitHelper {
 		wait.ignoring(ElementNotVisibleException.class);
 		wait.ignoring(StaleElementReferenceException.class);
 		wait.ignoring(NoSuchFrameException.class);
-		
-	
 	}
 	
 	public WebElement waitForElement(WebDriver driver,long time,WebElement element){

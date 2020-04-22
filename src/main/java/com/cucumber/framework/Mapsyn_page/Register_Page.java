@@ -13,6 +13,7 @@ import com.cucumber.framework.helper.genericHelper.GenericHelper;
 public class Register_Page {
 	
 	WebDriver driver;
+	WebDriver driver1;
 	//private final Logger log = LoggerHelper.getLogger(Create_new_account_page.class);
 	WaitHelper waitHelper;
 	Actions actions;
@@ -53,12 +54,33 @@ public class Register_Page {
 	
 	
 	
-	public Register_Page(WebDriver driver) {
-		this.driver = driver;
+//	public Register_Page(WebDriver driver) {
+//		this.driver = driver;
+//		PageFactory.initElements(driver, this);
+//		waitHelper = new WaitHelper(driver);
+//		//
+//	}
+	public Register_Page(WebDriver driver4, WebDriver driver2) {
+		this.driver = driver4;
+		this.driver1=driver2;
 		PageFactory.initElements(driver, this);
-		waitHelper = new WaitHelper(driver);
-		//
+		PageFactory.initElements(driver1, this);
+	
+		//waitHelper = new WaitHelper(driver);
+	//	waitHelper.waitForElement(driver, signin,ObjectRepo.reader.getExplicitWait());
 	}
+	public Register_Page(WebDriver driver2) {
+		this.driver1 = driver2;
+		
+		
+		PageFactory.initElements(driver1, this);
+	
+		//waitHelper = new WaitHelper(driver);
+	//	waitHelper.waitForElement(driver, signin,ObjectRepo.reader.getExplicitWait());
+	}
+	
+	
+	
 	
 	public boolean Error_Signup()
 	{
@@ -67,25 +89,15 @@ public class Register_Page {
 	
 	public void Gender() throws InterruptedException
 	{
-		waitHelper.waitForElement(driver, Gender,ObjectRepo.reader.getPageLoadTimeOut());
-		waitHelper.waitForElement(driver, Gender,ObjectRepo.reader.getExplicitWait());
-		
-		actions = new Actions(driver);
-		actions.moveToElement(Gender);
-		
-		actions.click().build().perform();
+		//waitHelper.waitForElement(driver1, Gender,ObjectRepo.reader.getPageLoadTimeOut());
+		//waitHelper.waitForElement(driver1, Gender,ObjectRepo.reader.getExplicitWait());
+		Gender.click();
+	
 	}
-	
-	
 	public void Register_icon() throws InterruptedException
 	{
-		waitHelper.waitForElement(driver, Register_icon,ObjectRepo.reader.getPageLoadTimeOut());
-		waitHelper.waitForElement(driver, Register_icon,ObjectRepo.reader.getExplicitWait());
-		
-		actions = new Actions(driver);
-		actions.moveToElement(Register_icon);
-		
-		actions.click().build().perform();
+		Register_icon.click();
+
 	}
 	public void FirstName(String FirstName) throws InterruptedException
 	{
@@ -124,24 +136,13 @@ public class Register_Page {
 	
 	public void click_Agree() throws InterruptedException
 	{
-		waitHelper.waitForElement(driver, click_Agree,ObjectRepo.reader.getPageLoadTimeOut());
-		waitHelper.waitForElement(driver, click_Agree,ObjectRepo.reader.getExplicitWait());
-		
-		actions = new Actions(driver);
-		actions.moveToElement(click_Agree);
-		
-		actions.click().build().perform();
+		click_Agree.click();
 	}
 	
 	public void click_Submit() throws InterruptedException
 	{
-		waitHelper.waitForElement(driver, click_Submit,ObjectRepo.reader.getPageLoadTimeOut());
-		waitHelper.waitForElement(driver, click_Submit,ObjectRepo.reader.getExplicitWait());
-		
-		actions = new Actions(driver);
-		actions.moveToElement(click_Submit);
-		
-		actions.click().build().perform();
+		click_Submit.click();
+	
 	}
 	
 	

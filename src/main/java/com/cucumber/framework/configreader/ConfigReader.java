@@ -11,4 +11,5 @@ public interface ConfigReader
 	public int getImplicitWait();
 	public int getExplicitWait();
 	public BrowserType getBrowser();
+	public BrowserType getBrowsers();
 }

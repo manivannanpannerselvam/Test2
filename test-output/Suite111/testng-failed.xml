@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite111]">
-  <test thread-count="5" name="Question_2(failed)">
+  <test thread-count="5" name="Search_functionality(failed)">
+    <classes>
+      <class name="com.cucumber.framework.runner.MaySyn.Search_map_functionality">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="0 1"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.cucumber.framework.runner.MaySyn.Search_map_functionality -->
+    </classes>
+  </test> <!-- Search_functionality(failed) -->
+  <test thread-count="5" name="Register(failed)">
     <classes>
       <class name="com.cucumber.framework.runner.MaySyn.Register">
         <methods>
@@ -11,5 +22,5 @@
         </methods>
       </class> <!-- com.cucumber.framework.runner.MaySyn.Register -->
     </classes>
-  </test> <!-- Question_2(failed) -->
+  </test> <!-- Register(failed) -->
 </suite> <!-- Failed suite [Suite111] -->

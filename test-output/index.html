@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Suite111">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">3 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">3 methods, 3 failed,   </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -100,6 +100,16 @@
                       <a href="#" panel-name="suite-Suite111" class="show-methods failed suite-Suite111"> (show)</a> <!-- show-methods failed suite-Suite111 -->
                     </span>
                     <div class="method-list-content failed suite-Suite111">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite111" title="com.cucumber.framework.runner.MaySyn.Search_map_functionality" hash-for-method="feature(verify the MapSynq_Zoom_In_Zoomout functionality)">feature(verify the MapSynq_Zoom_In_Zoomout functionality)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite111" title="com.cucumber.framework.runner.MaySyn.Search_map_functionality" hash-for-method="feature(verify the MapSynq_Search_Functionality)">feature(verify the MapSynq_Search_Functionality)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite111" title="com.cucumber.framework.runner.MaySyn.Register" hash-for-method="feature(verify the create Account screen)">feature(verify the create Account screen)</a> <!-- method navigator-link -->
@@ -129,13 +139,129 @@
                   </a> <!-- feature(verify the create Account screen) -->
                   <span class="method-name">feature</span>
                   <span class="parameters">(verify the create Account screen)</span>
-                  <div class="stack-trace">cucumber.runtime.CucumberException: java.lang.AssertionError: Register_step is fail expected [true] but found [false]
+                  <div class="stack-trace">cucumber.runtime.CucumberException: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//a[text()=&apos;Register &apos;]&quot;}
+  (Session info: chrome=81.0.4044.113)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.5.1&apos;, revision: &apos;9c21bb67ef&apos;, time: &apos;2017-08-17T15:26:08.955Z&apos;
+System info: host: &apos;LAPTOP-P9U8PG08&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Users\MANIVA~1\AppData\Local\Temp\scoped_dir20644_10703}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=81.0.4044.113, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a692ce5a6680cee498fc80184bb320fc
+*** Element info: {Using=xpath, value=.//a[text()=&apos;Register &apos;]}
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
-Caused by: java.lang.AssertionError: Register_step is fail expected [true] but found [false]
-	at com.cucumber.framework.stepdefinition.Mapsyn_step.Register_step.verify_the_Account_should_be_created(Register_step.java:128)
-	at ✽.Then Verify the Account should be created(featurefile/Mapsynq/Registers.feature:16)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//a[text()=&apos;Register &apos;]&quot;}
+  (Session info: chrome=81.0.4044.113)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.5.1&apos;, revision: &apos;9c21bb67ef&apos;, time: &apos;2017-08-17T15:26:08.955Z&apos;
+System info: host: &apos;LAPTOP-P9U8PG08&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Users\MANIVA~1\AppData\Local\Temp\scoped_dir20644_10703}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=81.0.4044.113, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a692ce5a6680cee498fc80184bb320fc
+*** Element info: {Using=xpath, value=.//a[text()=&apos;Register &apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:414)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:513)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:406)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy22.click(Unknown Source)
+	at com.cucumber.framework.Mapsyn_page.Register_Page.Register_icon(Register_Page.java:99)
+	at com.cucumber.framework.stepdefinition.Mapsyn_step.Register_step.click_the_click_the_Register_icon_in_Top_of_the_screen(Register_step.java:45)
+	at ✽.Then click the click the Register icon in Top of the screen(featurefile/Mapsynq/Registers.feature:6)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Feature)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite111-class-failed -->
+          <div class="suite-Suite111-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.cucumber.framework.runner.MaySyn.Search_map_functionality</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="feature(verify the MapSynq_Zoom_In_Zoomout functionality)">
+                  </a> <!-- feature(verify the MapSynq_Zoom_In_Zoomout functionality) -->
+                  <span class="method-name">feature</span>
+                  <span class="parameters">(verify the MapSynq_Zoom_In_Zoomout functionality)</span>
+                  <div class="stack-trace">cucumber.runtime.CucumberException: java.lang.AssertionError: Zoom_in_zoom_out is fail expected [true] but found [false]
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+Caused by: java.lang.AssertionError: Zoom_in_zoom_out is fail expected [true] but found [false]
+	at com.cucumber.framework.stepdefinition.Mapsyn_step.Zoom_in_zoom_out.verify_the_Map_link(Zoom_in_zoom_out.java:63)
+	at ✽.Then Verify the Map link(featurefile/Mapsynq/Maps.feature:14)
 ... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Feature)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="feature(verify the MapSynq_Search_Functionality)">
+                  </a> <!-- feature(verify the MapSynq_Search_Functionality) -->
+                  <span class="method-name">feature</span>
+                  <span class="parameters">(verify the MapSynq_Search_Functionality)</span>
+                  <div class="stack-trace">cucumber.runtime.CucumberException: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//input[@id=&apos;txtSearchIncidentsingapore&apos;]&quot;}
+  (Session info: chrome=81.0.4044.113)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.5.1&apos;, revision: &apos;9c21bb67ef&apos;, time: &apos;2017-08-17T15:26:08.955Z&apos;
+System info: host: &apos;LAPTOP-P9U8PG08&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Users\MANIVA~1\AppData\Local\Temp\scoped_dir9084_15977}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=81.0.4044.113, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 33b6f3286e10f48f267f40b0630afb30
+*** Element info: {Using=xpath, value=.//input[@id=&apos;txtSearchIncidentsingapore&apos;]}
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//input[@id=&apos;txtSearchIncidentsingapore&apos;]&quot;}
+  (Session info: chrome=81.0.4044.113)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.5.1&apos;, revision: &apos;9c21bb67ef&apos;, time: &apos;2017-08-17T15:26:08.955Z&apos;
+System info: host: &apos;LAPTOP-P9U8PG08&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Users\MANIVA~1\AppData\Local\Temp\scoped_dir9084_15977}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=81.0.4044.113, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 33b6f3286e10f48f267f40b0630afb30
+*** Element info: {Using=xpath, value=.//input[@id=&apos;txtSearchIncidentsingapore&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:414)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:513)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:406)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy22.sendKeys(Unknown Source)
+	at com.cucumber.framework.Mapsyn_page.Search_test_pages.search_field(Search_test_pages.java:48)
+	at com.cucumber.framework.stepdefinition.Mapsyn_step.Search_Test_steps.enter_the_valid_Incidents_search_name_in_search_field(Search_Test_steps.java:27)
+	at ✽.Then Enter the valid Incidents search name in search field &quot;Traffic&quot;(featurefile/Mapsynq/Searchs_functionality.feature:13)
+... Removed 29 stack frames
 </div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Feature)                  </em>
@@ -153,11 +279,16 @@ Caused by: java.lang.AssertionError: Register_step is fail expected [true] but f
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite111&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Question_2&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Search_functionality&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.cucumber.framework.runner.MaySyn.Search_map_functionality&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Search_functionality --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Register&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.cucumber.framework.runner.MaySyn.Register&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Question_2 --&gt;
+  &lt;/test&gt; &lt;!-- Register --&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Login_failed&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.cucumber.framework.runner.Infotech_HR.failedscenario&quot;/&gt;
@@ -174,7 +305,10 @@ Caused by: java.lang.AssertionError: Register_step is fail expected [true] but f
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Question_2 (1 class)</span>
+                <span class="test-name">Search_functionality (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Register (1 class)</span>
               </li>
               <li>
                 <span class="test-name">Login_failed (1 class)</span>
@@ -211,16 +345,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'feature')
-data.setCell(0, 2, 'com.cucumber.framework.runner.MaySyn.Register')
-data.setCell(0, 3, 35408);
+data.setCell(0, 2, 'com.cucumber.framework.runner.MaySyn.Search_map_functionality')
+data.setCell(0, 3, 261379);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'feature')
+data.setCell(1, 2, 'com.cucumber.framework.runner.MaySyn.Search_map_functionality')
+data.setCell(1, 3, 101097);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'feature')
+data.setCell(2, 2, 'com.cucumber.framework.runner.MaySyn.Register')
+data.setCell(2, 3, 77122);
 window.suiteTableData['Suite111']= { tableData: data, tableDiv: 'times-div-Suite111'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 35 seconds</span>
+              <span class="suite-total-time">Total running time: 7 minutes</span>
               <div id="times-div-Suite111">
               </div> <!-- times-div-Suite111 -->
             </div> <!-- times-div -->
@@ -246,7 +388,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.cucumber.framework.runner.MaySyn.Register</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.cucumber.framework.runner.MaySyn.Search_map_functionality</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUpClass</span>
                 <span class="method-start">0 ms</span>
@@ -254,23 +396,46 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">feature(verify the create Account screen)</span>
-                <span class="method-start">572 ms</span>
+                <span class="method-name">feature(verify the MapSynq_Zoom_In_Zoomout functionality)</span>
+                <span class="method-start">624 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">feature(verify the MapSynq_Search_Functionality)</span>
+                <span class="method-start">101729 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">35985 ms</span>
+                <span class="method-start">363115 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cucumber.framework.runner.MaySyn.Register</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass</span>
+                <span class="method-start">363369 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">feature(verify the create Account screen)</span>
+                <span class="method-start">363432 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">440559 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.cucumber.framework.runner.Infotech_HR.failedscenario</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUpClass</span>
-                <span class="method-start">36145 ms</span>
+                <span class="method-start">440626 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">36221 ms</span>
+                <span class="method-start">440689 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
