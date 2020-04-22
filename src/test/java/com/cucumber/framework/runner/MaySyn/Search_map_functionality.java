@@ -1,16 +1,16 @@
-package com.cucumber.framework.runner.IMDb;
+package com.cucumber.framework.runner.MaySyn;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 
-
-@CucumberOptions(features = { "classpath:featurefile/IMDB/Create_new_account.feature"}, glue = {
+@CucumberOptions(features = { "classpath:featurefile/Mapsynq/Searchs_functionality.feature","classpath:featurefile/Mapsynq/Maps.feature"}, glue = {
 		"classpath:com.cucumber.framework.stepdefinition",
 "classpath:com.cucumber.framework.helper" }, plugin = {"pretty:STDOUT","html:C:\\cucumber-pretty",
 	    "rerun:target/rerun1.txt"}
 
 )
 
-public class Question_2 extends AbstractTestNGCucumberTests {
+
+public class Search_map_functionality extends AbstractTestNGCucumberTests {
 
 }

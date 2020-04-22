@@ -1,55 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite111" duration-ms="405853" started-at="2020-04-10T07:54:22Z" finished-at="2020-04-10T08:01:08Z">
+  <suite name="Suite111" duration-ms="36235" started-at="2020-04-22T02:00:30Z" finished-at="2020-04-22T02:01:06Z">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.cucumber.framework.runner.IMDb.Question_1@74294adb]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.cucumber.framework.runner.MaySyn.Register@74294adb]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
         <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.cucumber.framework.runner.Infotech_HR.failedscenario@10b48321]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Question_1" duration-ms="405313" started-at="2020-04-10T07:54:22Z" finished-at="2020-04-10T08:01:08Z">
-      <class name="com.cucumber.framework.runner.IMDb.Question_1">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.cucumber.framework.runner.IMDb.Question_1@74294adb]" name="setUpClass" is-config="true" duration-ms="479" started-at="2020-04-10T07:54:22Z" finished-at="2020-04-10T07:54:23Z">
+    <test name="Question_2" duration-ms="36032" started-at="2020-04-22T02:00:30Z" finished-at="2020-04-22T02:01:06Z">
+      <class name="com.cucumber.framework.runner.MaySyn.Register">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.cucumber.framework.runner.MaySyn.Register@74294adb]" name="setUpClass" is-config="true" duration-ms="422" started-at="2020-04-22T02:00:30Z" finished-at="2020-04-22T02:00:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.cucumber.framework.runner.IMDb.Question_1@74294adb]" name="feature" duration-ms="260517" started-at="2020-04-10T07:54:23Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-04-10T07:58:44Z">
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.cucumber.framework.runner.MaySyn.Register@74294adb]" name="feature" duration-ms="35408" started-at="2020-04-22T02:00:30Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-04-22T02:01:06Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[verify the IMDB_Search_Functionality]]>
+                <![CDATA[verify the create Account screen]]>
               </value>
             </param>
           </params>
+          <exception class="cucumber.runtime.CucumberException">
+            <message>
+              <![CDATA[java.lang.AssertionError: Register_step is fail expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[cucumber.runtime.CucumberException: java.lang.AssertionError: Register_step is fail expected [true] but found [false]
+at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.AssertionError: Register_step is fail expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at com.cucumber.framework.stepdefinition.Mapsyn_step.Register_step.verify_the_Account_should_be_created(Register_step.java:128)
+at ✽.Then Verify the Account should be created(featurefile/Mapsynq/Registers.feature:16)
+]]>
+            </full-stacktrace>
+          </exception> <!-- cucumber.runtime.CucumberException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.cucumber.framework.runner.IMDb.Question_1@74294adb]" name="feature" duration-ms="143872" started-at="2020-04-10T07:58:44Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-04-10T08:01:08Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[verify the Top Rated show_Functionality]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.cucumber.framework.runner.IMDb.Question_1@74294adb]" name="tearDownClass" is-config="true" duration-ms="194" started-at="2020-04-10T08:01:08Z" finished-at="2020-04-10T08:01:08Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.cucumber.framework.runner.MaySyn.Register@74294adb]" name="tearDownClass" is-config="true" duration-ms="35" started-at="2020-04-22T02:01:06Z" finished-at="2020-04-22T02:01:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- com.cucumber.framework.runner.IMDb.Question_1 -->
-    </test> <!-- Question_1 -->
-    <test name="Login_failed" duration-ms="113" started-at="2020-04-10T08:01:08Z" finished-at="2020-04-10T08:01:08Z">
+      </class> <!-- com.cucumber.framework.runner.MaySyn.Register -->
+    </test> <!-- Question_2 -->
+    <test name="Login_failed" duration-ms="82" started-at="2020-04-22T02:01:06Z" finished-at="2020-04-22T02:01:06Z">
       <class name="com.cucumber.framework.runner.Infotech_HR.failedscenario">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.cucumber.framework.runner.Infotech_HR.failedscenario@10b48321]" name="setUpClass" is-config="true" duration-ms="34" started-at="2020-04-10T08:01:08Z" finished-at="2020-04-10T08:01:08Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.cucumber.framework.runner.Infotech_HR.failedscenario@10b48321]" name="setUpClass" is-config="true" duration-ms="75" started-at="2020-04-22T02:01:06Z" finished-at="2020-04-22T02:01:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.cucumber.framework.runner.Infotech_HR.failedscenario@10b48321]" name="tearDownClass" is-config="true" duration-ms="37" started-at="2020-04-10T08:01:08Z" finished-at="2020-04-10T08:01:08Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.cucumber.framework.runner.Infotech_HR.failedscenario@10b48321]" name="tearDownClass" is-config="true" duration-ms="3" started-at="2020-04-22T02:01:06Z" finished-at="2020-04-22T02:01:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

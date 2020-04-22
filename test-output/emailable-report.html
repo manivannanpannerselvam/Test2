@@ -9,14 +9,19 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Suite111</th></tr>
-<tr><td><a href="#t0">Question_1</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">405,313</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">Login_failed</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">113</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">2</th><th class="num">0</th><th class="num">0</th><th class="num">405,426</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">Question_2</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">36,032</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Login_failed</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">82</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">36,114</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite111</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Question_1 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.cucumber.framework.runner.IMDb.Question_1</td><td><a href="#m0">feature</a></td><td rowspan="2">1586505263630</td><td rowspan="2">260517</td></tr><tr class="passedeven"><td><a href="#m1">feature</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite111</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Question_2 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.cucumber.framework.runner.MaySyn.Register</td><td><a href="#m0">feature</a></td><td rowspan="1">1587520830917</td><td rowspan="1">35408</td></tr></tbody>
 <tbody id="t1"><tr><th colspan="4" class="invisible"/></tr></tbody>
 </table>
-<h2>Question_1</h2><h3 id="m0">com.cucumber.framework.runner.IMDb.Question_1#feature</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>verify the IMDB_Search_Functionality</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.cucumber.framework.runner.IMDb.Question_1#feature</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>verify the Top Rated show_Functionality</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Question_2</h2><h3 id="m0">com.cucumber.framework.runner.MaySyn.Register#feature</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>verify the create Account screen</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">cucumber.runtime.CucumberException: java.lang.AssertionError: Register_step is fail expected [true] but found [false]
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+Caused by: java.lang.AssertionError: Register_step is fail expected [true] but found [false]
+	at com.cucumber.framework.stepdefinition.Mapsyn_step.Register_step.verify_the_Account_should_be_created(Register_step.java:128)
+	at ✽.Then Verify the Account should be created(featurefile/Mapsynq/Registers.feature:16)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h2>Login_failed</h2></body>
 </html>

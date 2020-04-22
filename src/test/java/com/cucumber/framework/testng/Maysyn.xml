@@ -2,20 +2,20 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite111">
 
-	<test name="Question_1">
+	<test name="Search_functionality">
 		<classes>
-			<class name="com.cucumber.framework.runner.IMDb.Question_1"/>
+			<class name="com.cucumber.framework.runner.MaySyn.Search_map_functionality"/>
 			
 		</classes> 
 	</test>
-	  <!--  
-	  <test name="Question_2">
+	  
+	  <test name="Register">
 		<classes>
-			<class name="com.cucumber.framework.runner.IMDb.Question_2"/>
+			<class name="com.cucumber.framework.runner.MaySyn.Register"/>
 			
 		</classes> 
 	</test>
-	-->
+	
 	  
 	  <test name="Login_failed">
 		<classes>

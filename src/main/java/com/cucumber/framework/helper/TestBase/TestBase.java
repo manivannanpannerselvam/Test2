@@ -73,6 +73,8 @@ public class TestBase {
 	}
 	public WebDriver getBrowserObject(BrowserType bType) throws Exception {
 		try {
+			
+			 
 		//	log.info(bType);
 
 			switch (bType) {
